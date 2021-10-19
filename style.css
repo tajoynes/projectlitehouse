@@ -1,12 +1,98 @@
 body {
-    font-family: 'Roboto Slab', serif;
-    background:;
-}
-a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
+    font-family: 'Oswald', serif;
+    background: #f1f1d5;
 }
 
+a {
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+.navbar-light .navbar-brand {
+    font-family: 'Oswald', sans-serif;
+    color: #CF7500;
+    font-weight: 900;
+    text-shadow: 5px 5px 10px seashell;
+    font-size: x-large;
+    
+}
+span .logo {
+    color: #CF7500;
+}
+
+.nav-link {
+    transition: 0.3s ease-in;
+}
+
+.nav-link:hover {
+    background-color: #CF7500;
+}
+
+.button {
+    padding-right: 15px;
+    transition: ease 0.6s;
+}
+.button:hover {
+    transform: scale(0.8);
+}
+
+.page-one {
+    background:linear-gradient(to left, #F0A500 60%, #f1f1d5 30%);
+}
+.trending {
+    background: linear-gradient(to right, rgb(63, 72, 100) 70%, rgb(255, 255, 255) 30%);
+    border-radius: 8px;
+}
+.slogan {
+    font-family: 'Anton', sans-serif;
+    font-size: xx-large;
+    font-weight: 800;
+    font-stretch: expanded;
+    text-align: center;
+    padding: 50px;
+    color:rgb(0, 0, 0);
+    text-shadow: -5px 0px 11px rgba(150, 150, 150, 1);
+}
+.kofi {
+    background: #AB0202;
+    background: -webkit-linear-gradient(to right, #AB0202 0%, #00A100 50%, #CFBA00 100%);
+    background: -moz-linear-gradient(to right, #AB0202 0%, #00A100 50%, #CFBA00 100%);
+    background: linear-gradient(to right, #AB0202 0%, #00A100 50%, #CFBA00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none;
+}
+.bilboard {
+    font-size: 1.4em;
+}
+.search {
+    border-radius: 20px;
+}
+.nearby {
+    border-radius: 20px;
+}
+.lead {
+    text-align: right;
+}
+
+.advertise {
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .2);
+}
+.fa-fire {
+    color: rgb(212, 67, 0);
+}
+
+.card-carousel {
+    border: 5px #ffF;
+}
+.card-img-top {
+    height: 20vh;
+    width: 100%;
+    object-fit: cover;
+}
 .footer-links {
-    background-color: rgb(0, 0, 0);
+    background-color: #1A1C20;
+    color: aliceblue;
+    text-decoration: none;
 }
