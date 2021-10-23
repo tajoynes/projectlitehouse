@@ -31,7 +31,7 @@
 <header>
   <div class="navigation">
     <nav class="navbar navbar-expand-sm navbar-light fixed-top">
-      <a class="navbar-brand ms-4" data-target-to="form-control"><span class="logo">LIGHTHOUSE</span></a>
+      <a href="" class="navbar-brand ms-4 d-none d-sm-block" data-target-to="form-control"><span class="logo">DISCOVER WITH LIGHTHOUSE</span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenuItems">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -43,10 +43,6 @@
           <li class="nav-item">
             <a href="#" class="nav-link two">Browse</a>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link three">Events</a>
-          </li>
-        
         </ul>
       </div>
       <div class="button">
@@ -61,7 +57,7 @@
 
 <!-- Trending Image -->
 
-<div class="container page-one">
+<div class="container-fluid page-one">
     <div class="row mt-5 pt-5">
       <div class="col-6 mt-3">
         <p class="slogan">
@@ -80,7 +76,8 @@
 
 
   <!-- Tab Category Selector  -->
-  <ul class="nav nav-tabs nav-pills nav-fill mt-3 col-12  ">
+<div class="container">
+  <ul class="nav nav-tabs nav-pills nav-fill mt-3 col-12 col ">
     <li class="nav-item">
       <a class="nav-link active" href="#resturant" role="tab" data-bs-toggle="tab"><i class="fas fa-utensils m-2"></i>Resturants</a>
     </li>
@@ -93,15 +90,9 @@
     <li class="nav-item">
       <a class="nav-link" href="#home" role="tab" data-bs-toggle="tab"><i class="fas fa-home m-2"></i>Home Services</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#finance" role="tab" data-bs-toggle="tab"><i class="fas fa-hand-holding-usd m-2"></i>Banking & Finance</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#wellness" role="tab" data-bs-toggle="tab"><i class="fas fa-heartbeat m-2"></i>Wellness</a>
-    </li>
   </ul>
-
-  <div class="tab-content">
+<!-- Resturant Tab -->
+<div class="tab-content">
     <div role="tabpanel" class="tab-pane fade show active" id="resturant">
       <div class="container card-carousel mt-5">
         <div class="row">
@@ -187,6 +178,43 @@
                           </div>    
                         </div>
                     </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img class="card-img-top" src="/img/banana.jpg" alt="">
+                        <div class="card-img-overlay">
+                          <blockquote class="blockquote mb-0">
+                            <p>A well-known quote, contained in a blockquote element.</p>
+                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                          </blockquote>
+                        </div>
+                        </div>    
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card">
+                          <img class="card-img-top" src="/img/banana.jpg" alt="">
+                          <div class="card-img-overlay">
+                            <blockquote class="blockquote mb-0">
+                              <p>A well-known quote, contained in a blockquote element.</p>
+                              <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                            </blockquote>
+                          </div>
+                          </div>    
+                        </div>
+                        <div class="col-md-4">
+                          <div class="card">
+                            <img class="card-img-top" src="/img/banana.jpg" alt="">
+                            <div class="card-img-overlay">
+                              <blockquote class="blockquote mb-0">
+                                <p>A well-known quote, contained in a blockquote element.</p>
+                                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                              </blockquote>
+                            </div>
+                          </div>    
+                        </div>
+                    </div>
                 </div> 
               </div>
             </div>
@@ -195,8 +223,8 @@
       </div>
     </div>
   </div>
-
-    <div role="tabpanel" class="tab-pane fade" id="professional">
+<!-- Professional Services -->
+<div role="tabpanel" class="tab-pane fade" id="professional">
       <div class="container card-carousel mt-5">
         <div class="row">
           <div class="col-md-12">
@@ -328,20 +356,21 @@
         </div>
       </div>
     </div>
-  </div>
-
+</div>
+<!-- Auto Tab -->
   <div role="tabpanel" class="tab-pane fade" id="auto">
     <div class="container card-carousel mt-5">
       <div class="row">
         <div class="col-md-12">
-          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div id="autoIndicators" class="carousel slide" data-bs-ride="carousel">
             <ol class="carousel-indicators">
-              <li type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-              <li type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-              <li type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+              <li type="button" data-bs-target="#autoIndicators" data-bs-slide-to="0" class="active"></li>
+              <li type="button" data-bs-target="#autoIndicators" data-bs-slide-to="1"></li>
+              <li type="button" data-bs-target="#autoIndicators" data-bs-slide-to="2"></li>
             </ol>
           <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
+<!-- Carouse Item #1 -->
               <div class="carousel-item active">
                 <div class="row">
                   <div class="col-md-4">
@@ -379,11 +408,12 @@
                         </div>
                   </div>
               </div>
+<!-- Carousel Item #2 -->
               <div class="carousel-item">
                 <div class="row">
                   <div class="col-md-4">
                     <div class="card">
-                      <img class="card-img-top" src="/img/blueorange.jpg" alt="">
+                      <img class="card-img-top" src="/img/dice.jpg" alt="">
                       <div class="card-img-overlay">
                         <blockquote class="blockquote mb-0">
                           <p>A well-known quote, contained in a blockquote element.</p>
@@ -394,7 +424,7 @@
                     </div>
                     <div class="col-md-4">
                       <div class="card">
-                        <img class="card-img-top" src="/img/blueorange.jpg" alt="">
+                        <img class="card-img-top" src="/img/dice.jpg" alt="">
                         <div class="card-img-overlay">
                           <blockquote class="blockquote mb-0">
                             <p>A well-known quote, contained in a blockquote element.</p>
@@ -405,7 +435,7 @@
                       </div>
                       <div class="col-md-4">
                         <div class="card">
-                          <img class="card-img-top" src="/img/blueorange.jpg" alt="">
+                          <img class="card-img-top" src="/img/dice.jpg" alt="">
                           <div class="card-img-overlay">
                             <blockquote class="blockquote mb-0">
                               <p>A well-known quote, contained in a blockquote element.</p>
@@ -415,7 +445,46 @@
                           </div>    
                         </div>
                   </div>
-              </div>     
+              </div>
+
+<!-- Carousel Item #3 -->
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="card">
+                      <img class="card-img-top" src="/img/dice.jpg" alt="">
+                      <div class="card-img-overlay">
+                        <blockquote class="blockquote mb-0">
+                          <p>A well-known quote, contained in a blockquote element.</p>
+                          <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                        </blockquote>
+                      </div>
+                      </div>    
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img class="card-img-top" src="/img/dice.jpg" alt="">
+                        <div class="card-img-overlay">
+                          <blockquote class="blockquote mb-0">
+                            <p>A well-known quote, contained in a blockquote element.</p>
+                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                          </blockquote>
+                        </div>
+                        </div>    
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card">
+                          <img class="card-img-top" src="/img/dice.jpg" alt="">
+                          <div class="card-img-overlay">
+                            <blockquote class="blockquote mb-0">
+                              <p>A well-known quote, contained in a blockquote element.</p>
+                              <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                            </blockquote>
+                          </div>
+                        </div>    
+                      </div>
+                  </div>
+              </div>      
             </div>
           </div>
         </div>
@@ -423,20 +492,164 @@
     </div>
   </div>
 </div>
+<!-- Home Tab -->
+<div role="tabpanel" class="tab-pane fade" id="home">
+  <div class="container card-carousel mt-5">
+    <div class="row">
+      <div class="col-md-12">
+        <div id="homeIndicators" class="carousel slide" data-bs-ride="carousel">
+          <ol class="carousel-indicators">
+            <li type="button" data-bs-target="#homeIndicators" data-bs-slide-to="0" class="active"></li>
+            <li type="button" data-bs-target="#homeIndicators" data-bs-slide-to="1"></li>
+            <li type="button" data-bs-target="#homeIndicators" data-bs-slide-to="2"></li>
+          </ol>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+<!-- Carouse Item #1 -->
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card">
+                    <img class="card-img-top" src="/img/jerkchickensmall.jpg" alt="">
+                    <div class="card-img-overlay">
+                      <blockquote class="blockquote mb-0">
+                        <p>A well-known quote, contained in a blockquote element.</p>
+                        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                      </blockquote>
+                    </div>
+                    </div>    
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <img class="card-img-top" src="/img/jerkchickensmall.jpg" alt="">
+                      <div class="card-img-overlay">
+                        <blockquote class="blockquote mb-0">
+                          <p>A well-known quote, contained in a blockquote element.</p>
+                          <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                        </blockquote>
+                      </div>
+                      </div>    
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img class="card-img-top" src="/img/jerkchickensmall.jpg" alt="">
+                        <div class="card-img-overlay">
+                          <blockquote class="blockquote mb-0">
+                            <p>A well-known quote, contained in a blockquote element.</p>
+                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                          </blockquote>
+                        </div>
+                        </div>    
+                      </div>
+                </div>
+            </div>
+<!-- Carousel Item #2 -->
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card">
+                    <img class="card-img-top" src="/img/jerkchickensmall.jpg" alt="">
+                    <div class="card-img-overlay">
+                      <blockquote class="blockquote mb-0">
+                        <p>A well-known quote, contained in a blockquote element.</p>
+                        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                      </blockquote>
+                    </div>
+                    </div>    
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <img class="card-img-top" src="/img/jerkchickensmall.jpg" alt="">
+                      <div class="card-img-overlay">
+                        <blockquote class="blockquote mb-0">
+                          <p>A well-known quote, contained in a blockquote element.</p>
+                          <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                        </blockquote>
+                      </div>
+                      </div>    
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img class="card-img-top" src="/img/jerkchickensmall.jpg" alt="">
+                        <div class="card-img-overlay">
+                          <blockquote class="blockquote mb-0">
+                            <p>A well-known quote, contained in a blockquote element.</p>
+                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                          </blockquote>
+                        </div>
+                        </div>    
+                      </div>
+                </div>
+            </div>
+
+<!-- Carousel Item #3 -->
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card">
+                    <img class="card-img-top" src="/img/jerkchickensmall.jpg" alt="">
+                    <div class="card-img-overlay">
+                      <blockquote class="blockquote mb-0">
+                        <p>A well-known quote, contained in a blockquote element.</p>
+                        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                      </blockquote>
+                    </div>
+                    </div>    
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <img class="card-img-top" src="/img/jerkchickensmall.jpg" alt="">
+                      <div class="card-img-overlay">
+                        <blockquote class="blockquote mb-0">
+                          <p>A well-known quote, contained in a blockquote element.</p>
+                          <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                        </blockquote>
+                      </div>
+                      </div>    
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img class="card-img-top" src="/img/jerkchickensmall.jpg" alt="">
+                        <div class="card-img-overlay">
+                          <blockquote class="blockquote mb-0">
+                            <p>A well-known quote, contained in a blockquote element.</p>
+                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                          </blockquote>
+                        </div>
+                      </div>    
+                    </div>
+                </div>
+            </div>      
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
 
 
 </div>
 
 
 <!-- Jumbotron -->
-<div class="container-fluid">
-  <div class="row jumbotron mt-5 pt-3">
-    <div class="col col-md-10">
-      <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+<div class="container">
+  <div class="row jumbotron mt-5 pt-3 bg-light">
+    <div class="col col-md-4">
+      <p class="lead justify-content-center"> Join the growing movement and be the support the community needs.
       </p>
     </div>
     <div class="col col-md-2 selector">
-      <a href="#"><button type="button" class="btn btn-outline-dark btn-lg">Click to Join</button></a>
+      <a href="#"><button type="button" class="btn btn-outline-dark btn-lg">Join Now</button></a>
+    </div>
+    <div class="col col-md-4">
+      <p class="">
+        Are you a business? Interested on getting featured? Click to find out how.
+      </p>
+    </div>
+    <div class="col col-md-2">
+      <a href=""></a><button type="button" class="btn btn-outline-dark btn-lg">Business</button>
     </div>
   </div>
 </div>
@@ -582,41 +795,43 @@
   </div>
 </div>
 
-
-
-
-
-<!-- Social Media Links -->
-<div class="container-fluid padding">
-  <div class="row text-center padding">
-    <div class="col-12">
-      <h2>Stay Connected</h2>
-    </div>
-    <div class="col-12 social padding">
-      <a href=""><i class="fab fa-facebook"></i></a>
-      <a href=""><i class="fab fa-twitter"></i></a>
-      <a href=""><i class="fab fa-instagram"></i></a>
-      <a href=""><i class="fab fa-google-plus-g"></i></a>
-    </div>
-  </div>
 </div>
 
+    <!-- Social Media Links -->
+<div class="container-fluid mt-5 pt-2 pb-3 social-media">
+      <div class="row">
+        <div class="col col-sm-6">
+          <!-- Footer Nav Links -->
+          <footer class="footer-links d-none d-sm-block text-center">
+              <h5>Discover More</h5>
+              <hr class="light">
+          <div class="row">
+                <div class="col-6">
+                  <ul class="footer-nav">
+                  <li>About Lighthouse</li>
+                  <li>Blog Spot</li>
+                </div>
+                <div class="col-6 footer-nav">
+                  <li>Business</li>
+                  <li>Support</li>
+                </div>
+          </div>
+              </ul>
+            </footer>
+        </div>
+        <div class="col-12 col-sm-6 social-icons text-center">
+          <h5>Don't Miss Out Stay Connected</h5>
+          <hr class="light">
+          <a href=""><img src="/img/instagram(2).png" alt="Icons made by Pixel Perfect"><a href="https://www.flaticon.com/" title="Flaticon"></a></a>
+          <a href=""><img src="/img/facebook.png" alt="Icons made by Pixel Perfect"><a href="https://www.flaticon.com/" title="Flaticon"></a></a>
+          <a href=""><img src="/img/twitter.png" alt="Icons made by Pixel Perfect"><a href="https://www.flaticon.com/" title="Flaticon"></a></a>
+          <a href=""><img src="/img/google-plus.png" alt="Icons made by Pixel Perfect"><a href="https://www.flaticon.com/" title="Flaticon"></a></a>
+        </div>
+    </div>
+</div>
   
 
-<!-- Footer Nav Links -->
-  <footer class="footer-links">
-          <h2>Discover More</h2>
-          <hr class="light">
-          <ul class="footer-nav">
-          <li>About Lighthouse</li>
-          <li>Blog Spot</li>
-          <li>Business</li>
-          <li>Support</li>
-          <li></li>
-          </ul>
-        </div>
-    
-  </footer>
+
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   </body>

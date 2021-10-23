@@ -29,15 +29,19 @@ span .logo {
 }
 
 .button {
+    display: flex;
     padding-right: 15px;
     transition: ease 0.6s;
+    align-content: flex-end;
 }
+
 .button:hover {
     transform: scale(0.8);
+    filter: drop-shadow(0 0 0.75rem crimson);
 }
 
 .page-one {
-    background:linear-gradient(to left, #F0A500 60%, #f1f1d5 30%);
+    background:linear-gradient(to left, #F0A500 70%, #f1f1d5 30%);
 }
 .trending {
     background: linear-gradient(to right, rgb(63, 72, 100) 70%, rgb(255, 255, 255) 30%);
@@ -92,7 +96,29 @@ span .logo {
     object-fit: cover;
 }
 .footer-links {
-    background-color: #1A1C20;
-    color: aliceblue;
+    color: rgb(5, 5, 5);
     text-decoration: none;
+    position: relative;
+}
+.footer-nav li {
+    list-style: none;
+}
+
+.social-icons img {
+    display: inline-flex;
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+
+}
+.social-icons {
+    transition: all 1.8s ease-in-out;
+}
+.social-icons img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 0.75rem rgb(75, 71, 71));
+
+}
+.container-fluid.social-media {
+    background-color: #df9d47;
 }
