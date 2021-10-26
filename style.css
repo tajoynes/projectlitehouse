@@ -1,6 +1,6 @@
 body {
     font-family: 'Oswald', serif;
-    background: #f1f1d5;
+    background: #ffe4c2;
 }
 
 a {
@@ -41,34 +41,24 @@ span .logo {
 }
 
 .page-one {
-    background:linear-gradient(to left, #F0A500 70%, #f1f1d5 30%);
+    background-color: #ccbda9; 
 }
+.page-one img {
+    filter: blur(0.1px);
+}
+
 .trending {
     background: linear-gradient(to right, rgb(63, 72, 100) 70%, rgb(255, 255, 255) 30%);
     border-radius: 8px;
 }
-.slogan {
-    font-family: 'Anton', sans-serif;
-    font-size: xx-large;
-    font-weight: 800;
-    font-stretch: expanded;
-    text-align: center;
-    padding: 50px;
-    color:rgb(0, 0, 0);
-    text-shadow: -5px 0px 11px rgba(150, 150, 150, 1);
-}
-.kofi {
-    background: #AB0202;
-    background: -webkit-linear-gradient(to right, #AB0202 0%, #00A100 50%, #CFBA00 100%);
-    background: -moz-linear-gradient(to right, #AB0202 0%, #00A100 50%, #CFBA00 100%);
-    background: linear-gradient(to right, #AB0202 0%, #00A100 50%, #CFBA00 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: none;
-}
+
+
 .bilboard {
-    font-size: 1.4em;
+    font-size: 1.4rem;
+    z-index: 3;
 }
+
+
 .search {
     border-radius: 20px;
 }
@@ -79,19 +69,18 @@ span .logo {
     text-align: right;
 }
 
-.advertise {
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .2);
-}
 .fa-fire {
     color: rgb(212, 67, 0);
 }
 
+.advertise {
+    filter: saturate(130%);
+}
 .card-carousel {
     border: 5px #ffF;
 }
 .card-img-top {
-    height: 20vh;
+    height: 300px;
     width: 100%;
     object-fit: cover;
 }

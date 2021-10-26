@@ -31,22 +31,9 @@
 <header>
   <div class="navigation">
     <nav class="navbar navbar-expand-sm navbar-light fixed-top">
-      <a href="" class="navbar-brand ms-4 d-none d-sm-block" data-target-to="form-control"><span class="logo">DISCOVER WITH LIGHTHOUSE</span></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenuItems">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navMenuItems">
-        <ul class="navbar-nav justify-content-space-between">
-          <li class="nav-item active">
-            <a href="#" class="nav-link one">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link two">Browse</a>
-          </li>
-        </ul>
-      </div>
+      <a href="" class="navbar-brand ms-2" data-target-to="form-control" style="margin-right: 0;"><span class="logo">DISCOVER WITH LIGHTHOUSE</span></a>
       <div class="button">
-        <button class="btn btn-primary btn-lg icon">
+        <button class="btn btn-lg bg-transparent d-flex align-items-start icon" data-bs-toggle="modal" data-bs-target="#contactModal" style="padding-left: 5px;">
           <i class="fas fa-address-card"></i>
         </button>
       </div>
@@ -55,20 +42,48 @@
 </header>
 
 
+<!-- Contact Modal -->
+<div class="modal fade" id="contactModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-info">
+        <h5 class="modal-title text-white" id="contactModalLabel">Leave Us a Message</h5>
+      </div>
+      <div class="modal-body">
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="floatingInput" placeholder="First and Lastname">
+          <label for="floatingInput">Name</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+          <label for="floatingEmail">Email</label>
+        </div>
+        <div class="form-floating">
+          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+          <label for="floatingTextarea2">Comments</label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger btn-sm" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-outline-success text-dark"><a href="index.html" class="">Submit</a></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
 <!-- Trending Image -->
 
-<div class="container-fluid page-one">
-    <div class="row mt-5 pt-5">
-      <div class="col-6 mt-3">
-        <p class="slogan">
-          <span class="bilboard -4">Empowering, Connecting & Showcasing </span></br> Black-Owned Businesses near <span class="kofi">YOU</span> 
-        </p>
-      </div>
-      <div class="col-6">
-        <img class="advertise" src="/img/Ackee_and_Saltfish.jpg" alt="" style="height:50vh;">
-        <div class="input-group input-group-lg justify-content-center mt-4 mb-2">
-          <input type="text" class="search"> </br>
-          <button class="btn btn-outline-dark btn-large nearby">Search Nearby</button>
+<div class="container shadow-lg page-one mb-5 mt-5">
+    <div class="row ">
+      <div class="col">
+        <img class="advertise" src="/img/pexels-paul-efe-763934.jpg" alt="" style="height: 100%; width: 100%; object-fit: contain; border ">
+        <div class="form-group mt-2 pb-2 d-flex text-nowrap">
+          <button class="btn btn-dark btn-large nearby" for="searchBar">Search Nearby</button>
+          <input type="text" class="search form-control" id="searchBar"> </br>
+          <button class="btn btn-warning btn-large">Browse </button>
           </div>
       </div>
     </div>
@@ -76,7 +91,7 @@
 
 
   <!-- Tab Category Selector  -->
-<div class="container">
+<div class="container mt-5 pt-1">
   <ul class="nav nav-tabs nav-pills nav-fill mt-3 col-12 col ">
     <li class="nav-item">
       <a class="nav-link active" href="#resturant" role="tab" data-bs-toggle="tab"><i class="fas fa-utensils m-2"></i>Resturants</a>
@@ -84,10 +99,10 @@
     <li class="nav-item">
       <a class="nav-link" href="#professional" role="tab" data-bs-toggle="tab"><i class="fas fa-user-tie m-2"></i>Professional Services</a>
     </li>
-    <li class="nav-item">
+    <li class="nav-item d-none d-md-block">
       <a class="nav-link" href="#auto" role="tab" data-bs-toggle="tab"><i class="fas fa-car m-2"></i>Auto</a>
     </li>
-    <li class="nav-item">
+    <li class="nav-item d-none d-md-block">
       <a class="nav-link" href="#home" role="tab" data-bs-toggle="tab"><i class="fas fa-home m-2"></i>Home Services</a>
     </li>
   </ul>
@@ -97,22 +112,27 @@
       <div class="container card-carousel mt-5">
         <div class="row">
           <div class="col-md-12">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleIndicators" class="carousel slide">
               <ol class="carousel-indicators">
                 <li type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
                 <li type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
                 <li type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
               </ol>
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleSlidesOnly" class="carousel slide">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <div class="row">
                     <div class="col-md-4">
                       <div class="card">
+                        <div class="card-header">
+                          <div class="h5">
+                            Resturant #1
+                          </div>
+                        </div>
                         <img class="card-img-top" src="/img/banana.jpg" alt="">
-                        <div class="card-img-overlay">
-                          <blockquote class="blockquote mb-0">
-                            <p>A well-known quote, contained in a blockquote element.</p>
+                        <div class="card-img-overlay d-flex  align-items-end">
+                          <blockquote class="blockquote">
+                            <p class="">A well-known quote, contained in a blockquote element.</p>
                             <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
                           </blockquote>
                         </div>
@@ -120,9 +140,14 @@
                       </div>
                       <div class="col-md-4">
                         <div class="card">
+                          <div class="card-header">
+                            <div class="h5">
+                              Resturant #2
+                            </div>
+                          </div>
                           <img class="card-img-top" src="/img/banana.jpg" alt="">
-                          <div class="card-img-overlay">
-                            <blockquote class="blockquote mb-0">
+                          <div class="card-img-overlay d-flex  align-items-end">
+                            <blockquote class="blockquote">
                               <p>A well-known quote, contained in a blockquote element.</p>
                               <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
                             </blockquote>
@@ -131,9 +156,14 @@
                         </div>
                         <div class="col-md-4">
                           <div class="card">
+                            <div class="card-header">
+                              <div class="h5">
+                                Resturant #3
+                              </div>
+                            </div>
                             <img class="card-img-top" src="/img/banana.jpg" alt="">
-                            <div class="card-img-overlay">
-                              <blockquote class="blockquote mb-0">
+                            <div class="card-img-overlay d-flex  align-items-end">
+                              <blockquote class="blockquote">
                                 <p>A well-known quote, contained in a blockquote element.</p>
                                 <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
                               </blockquote>
@@ -146,9 +176,14 @@
                   <div class="row">
                     <div class="col-md-4">
                       <div class="card">
+                        <div class="card-header">
+                          <div class="h5">
+                            Resturant #4
+                          </div>
+                        </div>
                         <img class="card-img-top" src="/img/banana.jpg" alt="">
-                        <div class="card-img-overlay">
-                          <blockquote class="blockquote mb-0">
+                        <div class="card-img-overlay d-flex  align-items-end">
+                          <blockquote class="blockquote">
                             <p>A well-known quote, contained in a blockquote element.</p>
                             <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
                           </blockquote>
@@ -157,9 +192,14 @@
                       </div>
                       <div class="col-md-4">
                         <div class="card">
+                          <div class="card-header">
+                            <div class="h5">
+                              Resturant #5
+                            </div>
+                          </div>
                           <img class="card-img-top" src="/img/banana.jpg" alt="">
-                          <div class="card-img-overlay">
-                            <blockquote class="blockquote mb-0">
+                          <div class="card-img-overlay d-flex  align-items-end">
+                            <blockquote class="blockquote">
                               <p>A well-known quote, contained in a blockquote element.</p>
                               <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
                             </blockquote>
@@ -168,9 +208,14 @@
                         </div>
                         <div class="col-md-4">
                           <div class="card">
+                            <div class="card-header">
+                              <div class="h5">
+                                Resturant #6
+                              </div>
+                            </div>
                             <img class="card-img-top" src="/img/banana.jpg" alt="">
-                            <div class="card-img-overlay">
-                              <blockquote class="blockquote mb-0">
+                            <div class="card-img-overlay d-flex  align-items-end">
+                              <blockquote class="blockquote">
                                 <p>A well-known quote, contained in a blockquote element.</p>
                                 <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
                               </blockquote>
@@ -183,9 +228,14 @@
                   <div class="row">
                     <div class="col-md-4">
                       <div class="card">
+                        <div class="card-header">
+                          <div class="h5">
+                            Resturant #7
+                          </div>
+                        </div>
                         <img class="card-img-top" src="/img/banana.jpg" alt="">
-                        <div class="card-img-overlay">
-                          <blockquote class="blockquote mb-0">
+                        <div class="card-img-overlay d-flex  align-items-end">
+                          <blockquote class="blockquote">
                             <p>A well-known quote, contained in a blockquote element.</p>
                             <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
                           </blockquote>
@@ -194,9 +244,14 @@
                       </div>
                       <div class="col-md-4">
                         <div class="card">
+                          <div class="card-header">
+                            <div class="h5">
+                              Resturant #8
+                            </div>
+                          </div>
                           <img class="card-img-top" src="/img/banana.jpg" alt="">
-                          <div class="card-img-overlay">
-                            <blockquote class="blockquote mb-0">
+                          <div class="card-img-overlay d-flex  align-items-end">
+                            <blockquote class="blockquote">
                               <p>A well-known quote, contained in a blockquote element.</p>
                               <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
                             </blockquote>
@@ -205,9 +260,14 @@
                         </div>
                         <div class="col-md-4">
                           <div class="card">
+                            <div class="card-header">
+                              <div class="h5">
+                                Resturant #9
+                              </div>
+                            </div>
                             <img class="card-img-top" src="/img/banana.jpg" alt="">
-                            <div class="card-img-overlay">
-                              <blockquote class="blockquote mb-0">
+                            <div class="card-img-overlay d-flex  align-items-end">
+                              <blockquote class="blockquote">
                                 <p>A well-known quote, contained in a blockquote element.</p>
                                 <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
                               </blockquote>
@@ -240,9 +300,14 @@
                   <div class="row">
                     <div class="col-md-4">
                       <div class="card">
+                        <div class="card-header">
+                          <h5>
+                            Business #1
+                          </h5>
+                        </div>
                         <img class="card-img-top" src="/img/blueorange.jpg" alt="">
-                        <div class="card-img-overlay">
-                          <blockquote class="blockquote mb-0">
+                        <div class="card-img-overlay d-flex  align-items-end">
+                          <blockquote class="blockquote">
                             <p>A well-known quote, contained in a blockquote element.</p>
                             <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
                           </blockquote>
@@ -251,9 +316,14 @@
                       </div>
                       <div class="col-md-4">
                         <div class="card">
+                          <div class="card-header">
+                            <h5>
+                              Business #2
+                            </h5>
+                          </div>
                           <img class="card-img-top" src="/img/blueorange.jpg" alt="">
-                          <div class="card-img-overlay">
-                            <blockquote class="blockquote mb-0">
+                          <div class="card-img-overlay d-flex  align-items-end">
+                            <blockquote class="blockquote">
                               <p>A well-known quote, contained in a blockquote element.</p>
                               <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
                             </blockquote>
@@ -262,9 +332,14 @@
                         </div>
                         <div class="col-md-4">
                           <div class="card">
+                            <div class="card-header">
+                              <h5>
+                                Business #3
+                              </h5>
+                            </div>
                             <img class="card-img-top" src="/img/blueorange.jpg" alt="">
-                            <div class="card-img-overlay">
-                              <blockquote class="blockquote mb-0">
+                            <div class="card-img-overlay d-flex  align-items-end">
+                              <blockquote class="blockquote">
                                 <p>A well-known quote, contained in a blockquote element.</p>
                                 <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
                               </blockquote>
@@ -278,9 +353,14 @@
                   <div class="row">
                     <div class="col-md-4">
                       <div class="card">
+                        <div class="card-header">
+                          <h5>
+                            Business #4
+                          </h5>
+                        </div>
                         <img class="card-img-top" src="/img/blueorange.jpg" alt="">
-                        <div class="card-img-overlay">
-                          <blockquote class="blockquote mb-0">
+                        <div class="card-img-overlay d-flex  align-items-end">
+                          <blockquote class="blockquote">
                             <p>A well-known quote, contained in a blockquote element.</p>
                             <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
                           </blockquote>
@@ -289,9 +369,14 @@
                       </div>
                       <div class="col-md-4">
                         <div class="card">
+                          <div class="card-header">
+                            <h5>
+                              Business #5
+                            </h5>
+                          </div>
                           <img class="card-img-top" src="/img/blueorange.jpg" alt="">
-                          <div class="card-img-overlay">
-                            <blockquote class="blockquote mb-0">
+                          <div class="card-img-overlay d-flex  align-items-end">
+                            <blockquote class="blockquote">
                               <p>A well-known quote, contained in a blockquote element.</p>
                               <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
                             </blockquote>
@@ -300,9 +385,14 @@
                         </div>
                         <div class="col-md-4">
                           <div class="card">
+                            <div class="card-header">
+                              <h5>
+                                Business #6
+                              </h5>
+                            </div>
                             <img class="card-img-top" src="/img/blueorange.jpg" alt="">
-                            <div class="card-img-overlay">
-                              <blockquote class="blockquote mb-0">
+                            <div class="card-img-overlay d-flex  align-items-end">
+                              <blockquote class="blockquote">
                                 <p>A well-known quote, contained in a blockquote element.</p>
                                 <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
                               </blockquote>
@@ -316,9 +406,14 @@
                   <div class="row">
                     <div class="col-md-4">
                       <div class="card">
+                        <div class="card-header">
+                          <h5>
+                            Business #7
+                          </h5>
+                        </div>
                         <img class="card-img-top" src="/img/blueorange.jpg" alt="">
-                        <div class="card-img-overlay">
-                          <blockquote class="blockquote mb-0">
+                        <div class="card-img-overlay d-flex  align-items-end">
+                          <blockquote class="blockquote">
                             <p>A well-known quote, contained in a blockquote element.</p>
                             <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
                           </blockquote>
@@ -327,9 +422,14 @@
                       </div>
                       <div class="col-md-4">
                         <div class="card">
+                          <div class="card-header">
+                            <h5>
+                              Business #8
+                            </h5>
+                          </div>
                           <img class="card-img-top" src="/img/blueorange.jpg" alt="">
-                          <div class="card-img-overlay">
-                            <blockquote class="blockquote mb-0">
+                          <div class="card-img-overlay d-flex  align-items-end">
+                            <blockquote class="blockquote">
                               <p>A well-known quote, contained in a blockquote element.</p>
                               <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
                             </blockquote>
@@ -338,9 +438,14 @@
                         </div>
                         <div class="col-md-4">
                           <div class="card">
+                            <div class="card-header">
+                              <h5>
+                                Business #9
+                              </h5>
+                            </div>
                             <img class="card-img-top" src="/img/blueorange.jpg" alt="">
-                            <div class="card-img-overlay">
-                              <blockquote class="blockquote mb-0">
+                            <div class="card-img-overlay d-flex  align-items-end">
+                              <blockquote class="blockquote">
                                 <p>A well-known quote, contained in a blockquote element.</p>
                                 <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
                               </blockquote>
@@ -636,30 +741,30 @@
 <!-- Jumbotron -->
 <div class="container">
   <div class="row jumbotron mt-5 pt-3 bg-light">
-    <div class="col col-md-4">
-      <p class="lead justify-content-center"> Join the growing movement and be the support the community needs.
+    <div class="col-12 col-md-4">
+      <p class="text-uppercase justify-content-center"> Join the growing movement and be the support the community needs.
       </p>
     </div>
-    <div class="col col-md-2 selector">
-      <a href="#"><button type="button" class="btn btn-outline-dark btn-lg">Join Now</button></a>
+    <div class="col col-md-2 selector text-center">
+      <a href="#"><button type="button" class="btn btn-outline-warning btn-lg">Join Now</button></a>
     </div>
-    <div class="col col-md-4">
-      <p class="">
+    <div class="col-12 col-md-4 ">
+      <p class="text-uppercase">
         Are you a business? Interested on getting featured? Click to find out how.
       </p>
     </div>
-    <div class="col col-md-2">
-      <a href=""></a><button type="button" class="btn btn-outline-dark btn-lg">Business</button>
+    <div class="col col-md-2 text-center">
+      <a href=""></a><button type="button" class="btn btn-outline-success btn-lg">Business</button>
     </div>
   </div>
 </div>
 
 
 <!-- What's Trending Places -->
-<div class="container-fluid padding">
-  <div class="row welcome text-center">
-    <div class="col-12">
-      <h1 class="lead display-3"><i class="fas fa-fire"></i>What's Trending</h1>
+<div class="container pt-3">
+  <div class="row welcome">
+    <div class="col">
+      <h3 class="lead text-center"><i class="fas fa-fire prd-2"></i>What's Trending</h3>
     </div>
     <hr>
   </div>
@@ -798,7 +903,7 @@
 </div>
 
     <!-- Social Media Links -->
-<div class="container-fluid mt-5 pt-2 pb-3 social-media">
+<div class="container-fluid shadow mt-5 pt-2 pb-3 social-media">
       <div class="row">
         <div class="col col-sm-6">
           <!-- Footer Nav Links -->
