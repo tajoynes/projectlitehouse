@@ -24,8 +24,8 @@ span .logo {
     transition: 0.3s ease-in;
 }
 
-.nav-link:hover {
-    background-color: #CF7500;
+.fa-star {
+    color: #fbff16;
 }
 
 .button {
@@ -37,7 +37,7 @@ span .logo {
 
 .button:hover {
     transform: scale(0.8);
-    filter: drop-shadow(0 0 0.75rem crimson);
+    filter: drop-shadow(0 0 0.75rem rgb(20, 67, 220));
 }
 
 .page-one {
@@ -57,7 +57,10 @@ span .logo {
     font-size: 1.4rem;
     z-index: 3;
 }
-
+.resturantName {
+    color: #f3cea0;
+    outline: rgb(0, 0, 0);
+}
 
 .search {
     border-radius: 20px;
@@ -70,7 +73,8 @@ span .logo {
 }
 
 .fa-fire {
-    color: rgb(212, 67, 0);
+    color: rgb(255, 129, 56);
+    text-shadow: 1px 1px 10px rgb(230, 123, 52);
 }
 
 .advertise {
@@ -84,6 +88,16 @@ span .logo {
     width: 100%;
     object-fit: cover;
 }
+
+.card {
+    transition: all 500ms ease-in-out;
+}
+.card:hover {
+    transform: scale(0.98);
+    filter: drop-shadow(0 0 0.9rem rgb(100, 107, 128));
+    
+}
+
 .footer-links {
     color: rgb(5, 5, 5);
     text-decoration: none;

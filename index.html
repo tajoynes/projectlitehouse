@@ -76,14 +76,15 @@
 
 <!-- Trending Image -->
 
-<div class="container shadow-lg page-one mb-5 mt-5">
+<div class="container shadow-lg page-one mb-5 mt-5 pb-2">
     <div class="row ">
       <div class="col">
         <img class="advertise" src="/img/pexels-paul-efe-763934.jpg" alt="" style="height: 100%; width: 100%; object-fit: contain; border ">
         <div class="form-group mt-2 pb-2 d-flex text-nowrap">
           <button class="btn btn-dark btn-large nearby" for="searchBar">Search Nearby</button>
           <input type="text" class="search form-control" id="searchBar"> </br>
-          <button class="btn btn-warning btn-large">Browse </button>
+          <button class="btn btn-warning btn-lg m-1">Browse </button>
+          <button class="btn btn-primary btn-sm"> <i class="fas fa-star"></i>Top Rated</button>
           </div>
       </div>
     </div>
@@ -96,7 +97,7 @@
     <li class="nav-item">
       <a class="nav-link active" href="#resturant" role="tab" data-bs-toggle="tab"><i class="fas fa-utensils m-2"></i>Resturants</a>
     </li>
-    <li class="nav-item">
+    <li class="nav-item d-none d-md-block">
       <a class="nav-link" href="#professional" role="tab" data-bs-toggle="tab"><i class="fas fa-user-tie m-2"></i>Professional Services</a>
     </li>
     <li class="nav-item d-none d-md-block">
@@ -106,66 +107,59 @@
       <a class="nav-link" href="#home" role="tab" data-bs-toggle="tab"><i class="fas fa-home m-2"></i>Home Services</a>
     </li>
   </ul>
+
+
 <!-- Resturant Tab -->
 <div class="tab-content">
     <div role="tabpanel" class="tab-pane fade show active" id="resturant">
       <div class="container card-carousel mt-5">
         <div class="row">
           <div class="col-md-12">
-            <div id="carouselExampleIndicators" class="carousel slide">
+            <div id="carouselResturant" class="carousel slide">
               <ol class="carousel-indicators">
-                <li type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-                <li type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-                <li type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+                <li type="button" data-bs-target="#carouselResturant" data-bs-slide-to="0" class="active"></li>
+                <li type="button" data-bs-target="#carouselResturant" data-bs-slide-to="1"></li>
+                <li type="button" data-bs-target="#carouselResturant" data-bs-slide-to="2"></li>
               </ol>
-            <div id="carouselExampleSlidesOnly" class="carousel slide">
+            <div id="carouselResturant" class="carousel slide">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <div class="row">
                     <div class="col-md-4">
                       <div class="card">
-                        <div class="card-header">
-                          <div class="h5">
+                          <div class="card-img-overlay">
                             Resturant #1
                           </div>
-                        </div>
-                        <img class="card-img-top" src="/img/banana.jpg" alt="">
+                        <img class="card-img-top" src="/img/pexels-nappy-935977.jpg" alt="">
                         <div class="card-img-overlay d-flex  align-items-end">
                           <blockquote class="blockquote">
-                            <p class="">A well-known quote, contained in a blockquote element.</p>
-                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                            <footer class="blockquote-footer"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><cite title="Source Title"  class="resturantName">Resturant Name</cite></footer>
                           </blockquote>
                         </div>
                         </div>    
                       </div>
                       <div class="col-md-4">
                         <div class="card">
-                          <div class="card-header">
-                            <div class="h5">
+                            <div class="card-img-overlay">
                               Resturant #2
                             </div>
-                          </div>
-                          <img class="card-img-top" src="/img/banana.jpg" alt="">
+                          <img class="card-img-top" src="/img/pexels-monstera-9490629.jpg" alt="">
                           <div class="card-img-overlay d-flex  align-items-end">
                             <blockquote class="blockquote">
-                              <p>A well-known quote, contained in a blockquote element.</p>
-                              <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                              <footer class="blockquote-footer"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><cite title="Source Title"  class="resturantName">Resturant Name</cite></footer>
                             </blockquote>
                           </div>
                           </div>    
                         </div>
                         <div class="col-md-4">
                           <div class="card">
-                            <div class="card-header">
-                              <div class="h5">
+                              <div class="card-img-overlay">
                                 Resturant #3
                               </div>
-                            </div>
-                            <img class="card-img-top" src="/img/banana.jpg" alt="">
+                            <img class="card-img-top" src="/img/pexels-monstera-9489084.jpg" alt="">
                             <div class="card-img-overlay d-flex  align-items-end">
                               <blockquote class="blockquote">
-                                <p>A well-known quote, contained in a blockquote element.</p>
-                                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                <footer class="blockquote-footer"><i class="fas fa-star"></i><cite title="Source Title"  class="resturantName">Resturant Name</cite></footer>
                               </blockquote>
                             </div>
                           </div>    
@@ -176,48 +170,39 @@
                   <div class="row">
                     <div class="col-md-4">
                       <div class="card">
-                        <div class="card-header">
-                          <div class="h5">
+                          <div class="card-img-overlay">
                             Resturant #4
                           </div>
-                        </div>
-                        <img class="card-img-top" src="/img/banana.jpg" alt="">
+                        <img class="card-img-top" src="/img/pexels-monstera-9489080.jpg" alt="">
                         <div class="card-img-overlay d-flex  align-items-end">
                           <blockquote class="blockquote">
-                            <p>A well-known quote, contained in a blockquote element.</p>
-                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                            <footer class="blockquote-footer"><i class="fas fa-star"></i><i class="fas fa-star"></i><cite title="Source Title"  class="resturantName">Resturant #1</cite></footer>
                           </blockquote>
                         </div>
                         </div>    
                       </div>
                       <div class="col-md-4">
                         <div class="card">
-                          <div class="card-header">
-                            <div class="h5">
+                            <div class="card-img-overlay">
                               Resturant #5
                             </div>
-                          </div>
-                          <img class="card-img-top" src="/img/banana.jpg" alt="">
+                          <img class="card-img-top" src="/img/pexels-monstera-9488840.jpg" alt="">
                           <div class="card-img-overlay d-flex  align-items-end">
                             <blockquote class="blockquote">
-                              <p>A well-known quote, contained in a blockquote element.</p>
-                              <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                              <footer class="blockquote-footer"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><cite title="Source Title"  class="resturantName">Resturant Name</cite></footer>
                             </blockquote>
                           </div>
                           </div>    
                         </div>
                         <div class="col-md-4">
                           <div class="card">
-                            <div class="card-header">
-                              <div class="h5">
+                              <div class="card-img-overlay">
                                 Resturant #6
                               </div>
-                            </div>
-                            <img class="card-img-top" src="/img/banana.jpg" alt="">
+                            <img class="card-img-top" src="/img/pexels-fauxels-3183181.jpg" alt="">
                             <div class="card-img-overlay d-flex  align-items-end">
                               <blockquote class="blockquote">
-                                <p>A well-known quote, contained in a blockquote element.</p>
-                                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                <footer class="blockquote-footer"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><cite title="Source Title"  class="resturantName">Resturant Name</cite></footer>
                               </blockquote>
                             </div>
                           </div>    
@@ -228,48 +213,39 @@
                   <div class="row">
                     <div class="col-md-4">
                       <div class="card">
-                        <div class="card-header">
-                          <div class="h5">
+                        <div class="card-img-overlay">
                             Resturant #7
-                          </div>
                         </div>
-                        <img class="card-img-top" src="/img/banana.jpg" alt="">
+                        <img class="card-img-top" src="/img/pexels-christina-morillo-1181667.jpg" alt="">
                         <div class="card-img-overlay d-flex  align-items-end">
                           <blockquote class="blockquote">
-                            <p>A well-known quote, contained in a blockquote element.</p>
-                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                            <footer class="blockquote-footer"><i class="fas fa-star"></i><cite title="Source Title"  class="resturantName">Resturant Name</cite></footer>
                           </blockquote>
                         </div>
                         </div>    
                       </div>
                       <div class="col-md-4">
                         <div class="card">
-                          <div class="card-header">
-                            <div class="h5">
+                          <div class="card-img-overlay">
                               Resturant #8
-                            </div>
                           </div>
-                          <img class="card-img-top" src="/img/banana.jpg" alt="">
+                          <img class="card-img-top" src="/img/pexels-christina-morillo-1181583.jpg" alt="">
                           <div class="card-img-overlay d-flex  align-items-end">
                             <blockquote class="blockquote">
-                              <p>A well-known quote, contained in a blockquote element.</p>
-                              <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                              <footer class="blockquote-footer"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><cite title="Source Title"  class="resturantName">Resturant Name</cite></footer>
                             </blockquote>
                           </div>
                           </div>    
                         </div>
                         <div class="col-md-4">
                           <div class="card">
-                            <div class="card-header">
-                              <div class="h5">
+                            <div class="card-img-overlay">
                                 Resturant #9
-                              </div>
                             </div>
-                            <img class="card-img-top" src="/img/banana.jpg" alt="">
+                            <img class="card-img-top" src="/img/pexels-paul-efe-763934.jpg" alt="">
                             <div class="card-img-overlay d-flex  align-items-end">
                               <blockquote class="blockquote">
-                                <p>A well-known quote, contained in a blockquote element.</p>
-                                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                <footer class="blockquote-footer"><i class="fas fa-star"></i><i class="fas fa-star"></i><cite title="Source Title"  class="resturantName">Resturant Name</cite></footer>
                               </blockquote>
                             </div>
                           </div>    
@@ -278,6 +254,14 @@
                 </div> 
               </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselResturant" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselResturant" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
       </div>
@@ -288,459 +272,442 @@
       <div class="container card-carousel mt-5">
         <div class="row">
           <div class="col-md-12">
-            <div id="professionalServicesIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselProfessional" class="carousel slide">
               <ol class="carousel-indicators">
-                <li type="button" data-bs-target="#professionalServicesIndicators" data-bs-slide-to="0" class="active"></li>
-                <li type="button" data-bs-target="#professionalServicesIndicators" data-bs-slide-to="1"></li>
-                <li type="button" data-bs-target="#professionalServicesIndicators" data-bs-slide-to="2"></li>
+                <li type="button" data-bs-target="#carouselProfessional" data-bs-slide-to="0" class="active"></li>
+                <li type="button" data-bs-target="#carouselProfessional" data-bs-slide-to="1"></li>
+                <li type="button" data-bs-target="#carouselProfessional" data-bs-slide-to="2"></li>
               </ol>
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <div class="card">
-                        <div class="card-header">
-                          <h5>
-                            Business #1
-                          </h5>
-                        </div>
-                        <img class="card-img-top" src="/img/blueorange.jpg" alt="">
-                        <div class="card-img-overlay d-flex  align-items-end">
-                          <blockquote class="blockquote">
-                            <p>A well-known quote, contained in a blockquote element.</p>
-                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                          </blockquote>
-                        </div>
-                        </div>    
-                      </div>
+              <div id="carouselProfessional" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
                       <div class="col-md-4">
                         <div class="card">
-                          <div class="card-header">
-                            <h5>
-                              Business #2
-                            </h5>
+                          <div class="card-img-overlay">
+                              Services #1
                           </div>
-                          <img class="card-img-top" src="/img/blueorange.jpg" alt="">
+                          <img class="card-img-top" src="/img/pexels-nappy-935977.jpg" alt="">
                           <div class="card-img-overlay d-flex  align-items-end">
                             <blockquote class="blockquote">
-                              <p>A well-known quote, contained in a blockquote element.</p>
-                              <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                              <footer class="blockquote-footer"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><cite title="Source Title"  class="resturantName">Resturant Name</cite></footer>
                             </blockquote>
                           </div>
                           </div>    
                         </div>
                         <div class="col-md-4">
                           <div class="card">
-                            <div class="card-header">
-                              <h5>
-                                Business #3
-                              </h5>
+                            <div class="card-img-overlay">
+                              Services #2
                             </div>
-                            <img class="card-img-top" src="/img/blueorange.jpg" alt="">
+                            <img class="card-img-top" src="/img/pexels-monstera-9490629.jpg" alt="">
                             <div class="card-img-overlay d-flex  align-items-end">
                               <blockquote class="blockquote">
-                                <p>A well-known quote, contained in a blockquote element.</p>
-                                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                <footer class="blockquote-footer"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><cite title="Source Title"  class="resturantName">Resturant Name</cite></footer>
                               </blockquote>
                             </div>
                             </div>    
                           </div>
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <div class="card">
-                        <div class="card-header">
-                          <h5>
-                            Business #4
-                          </h5>
-                        </div>
-                        <img class="card-img-top" src="/img/blueorange.jpg" alt="">
-                        <div class="card-img-overlay d-flex  align-items-end">
-                          <blockquote class="blockquote">
-                            <p>A well-known quote, contained in a blockquote element.</p>
-                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                          </blockquote>
-                        </div>
-                        </div>    
+                          <div class="col-md-4">
+                            <div class="card">
+                              <div class="card-img-overlay">
+                                Services #3
+                              </div>
+                              <img class="card-img-top" src="/img/pexels-monstera-9489084.jpg" alt="">
+                              <div class="card-img-overlay d-flex  align-items-end">
+                                <blockquote class="blockquote">
+                                  <footer class="blockquote-footer"><i class="fas fa-star"></i><cite title="Source Title"  class="resturantName">Resturant Name</cite></footer>
+                                </blockquote>
+                              </div>
+                            </div>    
+                          </div>
                       </div>
+                  </div> 
+                  <div class="carousel-item">
+                    <div class="row">
                       <div class="col-md-4">
                         <div class="card">
-                          <div class="card-header">
-                            <h5>
-                              Business #5
-                            </h5>
+                          <div class="card-img-overlay">
+                            Services #4
                           </div>
-                          <img class="card-img-top" src="/img/blueorange.jpg" alt="">
+                          <img class="card-img-top" src="/img/pexels-monstera-9489080.jpg" alt="">
                           <div class="card-img-overlay d-flex  align-items-end">
                             <blockquote class="blockquote">
-                              <p>A well-known quote, contained in a blockquote element.</p>
-                              <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                              <footer class="blockquote-footer"><i class="fas fa-star"></i><i class="fas fa-star"></i><cite title="Source Title"  class="resturantName">Resturant #1</cite></footer>
                             </blockquote>
                           </div>
                           </div>    
                         </div>
                         <div class="col-md-4">
                           <div class="card">
-                            <div class="card-header">
-                              <h5>
-                                Business #6
-                              </h5>
+                            <div class="card-img-overlay">
+                              Services #5
                             </div>
-                            <img class="card-img-top" src="/img/blueorange.jpg" alt="">
+                            <img class="card-img-top" src="/img/pexels-monstera-9488840.jpg" alt="">
                             <div class="card-img-overlay d-flex  align-items-end">
                               <blockquote class="blockquote">
-                                <p>A well-known quote, contained in a blockquote element.</p>
-                                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                <footer class="blockquote-footer"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><cite title="Source Title"  class="resturantName">Resturant Name</cite></footer>
                               </blockquote>
                             </div>
                             </div>    
                           </div>
-                    </div>
-                </div>
-                
-                <div class="carousel-item">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <div class="card">
-                        <div class="card-header">
-                          <h5>
-                            Business #7
-                          </h5>
-                        </div>
-                        <img class="card-img-top" src="/img/blueorange.jpg" alt="">
-                        <div class="card-img-overlay d-flex  align-items-end">
-                          <blockquote class="blockquote">
-                            <p>A well-known quote, contained in a blockquote element.</p>
-                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                          </blockquote>
-                        </div>
-                        </div>    
+                          <div class="col-md-4">
+                            <div class="card">
+                              <div class="card-img-overlay">
+                                Services #6
+                              </div>
+                              <img class="card-img-top" src="/img/pexels-fauxels-3183181.jpg" alt="">
+                              <div class="card-img-overlay d-flex  align-items-end">
+                                <blockquote class="blockquote">
+                                  <footer class="blockquote-footer"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><cite title="Source Title"  class="resturantName">Resturant Name</cite></footer>
+                                </blockquote>
+                              </div>
+                            </div>    
+                          </div>
                       </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
                       <div class="col-md-4">
                         <div class="card">
-                          <div class="card-header">
-                            <h5>
-                              Business #8
-                            </h5>
-                          </div>
-                          <img class="card-img-top" src="/img/blueorange.jpg" alt="">
+                          <div class="card-img-overlay">
+                            Services #7
+                           </div>
+                          <img class="card-img-top" src="/img/pexels-christina-morillo-1181667.jpg" alt="">
                           <div class="card-img-overlay d-flex  align-items-end">
                             <blockquote class="blockquote">
-                              <p>A well-known quote, contained in a blockquote element.</p>
-                              <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                              <footer class="blockquote-footer"><i class="fas fa-star"></i><cite title="Source Title"  class="resturantName">Resturant Name</cite></footer>
                             </blockquote>
                           </div>
                           </div>    
                         </div>
                         <div class="col-md-4">
                           <div class="card">
-                            <div class="card-header">
-                              <h5>
-                                Business #9
-                              </h5>
+                            <div class="card-img-overlay">
+                              Services #8
                             </div>
-                            <img class="card-img-top" src="/img/blueorange.jpg" alt="">
+                            <img class="card-img-top" src="/img/pexels-christina-morillo-1181583.jpg" alt="">
                             <div class="card-img-overlay d-flex  align-items-end">
                               <blockquote class="blockquote">
-                                <p>A well-known quote, contained in a blockquote element.</p>
-                                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                <footer class="blockquote-footer"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><cite title="Source Title"  class="resturantName">Resturant Name</cite></footer>
                               </blockquote>
                             </div>
                             </div>    
                           </div>
-                    </div>
+                          <div class="col-md-4">
+                            <div class="card">
+                              <div class="card-img-overlay">
+                                Services #1
+                              </div>
+                              <img class="card-img-top" src="/img/pexels-paul-efe-763934.jpg" alt="">
+                              <div class="card-img-overlay d-flex  align-items-end">
+                                <blockquote class="blockquote">
+                                  <footer class="blockquote-footer"><i class="fas fa-star"></i><i class="fas fa-star"></i><cite title="Source Title"  class="resturantName">Resturant Name</cite></footer>
+                                </blockquote>
+                              </div>
+                            </div>    
+                          </div>
+                      </div>
+                  </div> 
                 </div>
-
               </div>
-            </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselProfessional" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselProfessional" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
           </div>
         </div>
       </div>
     </div>
 </div>
+
+
 <!-- Auto Tab -->
-  <div role="tabpanel" class="tab-pane fade" id="auto">
-    <div class="container card-carousel mt-5">
-      <div class="row">
-        <div class="col-md-12">
-          <div id="autoIndicators" class="carousel slide" data-bs-ride="carousel">
-            <ol class="carousel-indicators">
-              <li type="button" data-bs-target="#autoIndicators" data-bs-slide-to="0" class="active"></li>
-              <li type="button" data-bs-target="#autoIndicators" data-bs-slide-to="1"></li>
-              <li type="button" data-bs-target="#autoIndicators" data-bs-slide-to="2"></li>
-            </ol>
-          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+<div role="tabpanel" class="tab-pane fade" id="auto">
+  <div class="container card-carousel mt-5">
+    <div class="row">
+      <div class="col-md-12">
+        <div id="carouselAuto" class="carousel slide">
+          <ol class="carousel-indicators">
+            <li type="button" data-bs-target="#carouselAuto" data-bs-slide-to="0" class="active"></li>
+            <li type="button" data-bs-target="#carouselAuto" data-bs-slide-to="1"></li>
+            <li type="button" data-bs-target="#carouselAuto" data-bs-slide-to="2"></li>
+          </ol>
+          <div id="carouselAuto" class="carousel slide">
             <div class="carousel-inner">
-<!-- Carouse Item #1 -->
               <div class="carousel-item active">
                 <div class="row">
                   <div class="col-md-4">
                     <div class="card">
-                      <img class="card-img-top" src="/img/dice.jpg" alt="">
                       <div class="card-img-overlay">
-                        <blockquote class="blockquote mb-0">
-                          <p>A well-known quote, contained in a blockquote element.</p>
-                          <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                          Auto Services #1
+                      </div>
+                      <img class="card-img-top" src="/img/pexels-nappy-935977.jpg" alt="">
+                      <div class="card-img-overlay d-flex  align-items-end">
+                        <blockquote class="blockquote">
+                          <footer class="blockquote-footer"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><cite title="Source Title"  class="resturantName">Name</cite></footer>
                         </blockquote>
                       </div>
                       </div>    
                     </div>
                     <div class="col-md-4">
                       <div class="card">
-                        <img class="card-img-top" src="/img/dice.jpg" alt="">
                         <div class="card-img-overlay">
-                          <blockquote class="blockquote mb-0">
-                            <p>A well-known quote, contained in a blockquote element.</p>
-                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                          Auto Services #2
+                        </div>
+                        <img class="card-img-top" src="/img/pexels-monstera-9490629.jpg" alt="">
+                        <div class="card-img-overlay d-flex  align-items-end">
+                          <blockquote class="blockquote">
+                            <footer class="blockquote-footer"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><cite title="Source Title"  class="resturantName">Name</cite></footer>
                           </blockquote>
                         </div>
                         </div>    
                       </div>
                       <div class="col-md-4">
                         <div class="card">
-                          <img class="card-img-top" src="/img/dice.jpg" alt="">
                           <div class="card-img-overlay">
-                            <blockquote class="blockquote mb-0">
-                              <p>A well-known quote, contained in a blockquote element.</p>
-                              <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                            Auto Services #3
+                          </div>
+                          <img class="card-img-top" src="/img/pexels-monstera-9489084.jpg" alt="">
+                          <div class="card-img-overlay d-flex  align-items-end">
+                            <blockquote class="blockquote">
+                              <footer class="blockquote-footer"><i class="fas fa-star"></i><cite title="Source Title"  class="resturantName">Name</cite></footer>
                             </blockquote>
                           </div>
-                          </div>    
-                        </div>
+                        </div>    
+                      </div>
                   </div>
-              </div>
-<!-- Carousel Item #2 -->
+              </div> 
               <div class="carousel-item">
                 <div class="row">
                   <div class="col-md-4">
                     <div class="card">
-                      <img class="card-img-top" src="/img/dice.jpg" alt="">
                       <div class="card-img-overlay">
-                        <blockquote class="blockquote mb-0">
-                          <p>A well-known quote, contained in a blockquote element.</p>
-                          <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                        Auto Services #4
+                      </div>
+                      <img class="card-img-top" src="/img/pexels-monstera-9489080.jpg" alt="">
+                      <div class="card-img-overlay d-flex  align-items-end">
+                        <blockquote class="blockquote">
+                          <footer class="blockquote-footer"><i class="fas fa-star"></i><i class="fas fa-star"></i><cite title="Source Title"  class="resturantName">Name</cite></footer>
                         </blockquote>
                       </div>
                       </div>    
                     </div>
                     <div class="col-md-4">
                       <div class="card">
-                        <img class="card-img-top" src="/img/dice.jpg" alt="">
                         <div class="card-img-overlay">
-                          <blockquote class="blockquote mb-0">
-                            <p>A well-known quote, contained in a blockquote element.</p>
-                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                          Auto Services #5
+                        </div>
+                        <img class="card-img-top" src="/img/pexels-monstera-9488840.jpg" alt="">
+                        <div class="card-img-overlay d-flex  align-items-end">
+                          <blockquote class="blockquote">
+                            <footer class="blockquote-footer"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><cite title="Source Title"  class="resturantName">Name</cite></footer>
                           </blockquote>
                         </div>
                         </div>    
                       </div>
                       <div class="col-md-4">
                         <div class="card">
-                          <img class="card-img-top" src="/img/dice.jpg" alt="">
                           <div class="card-img-overlay">
-                            <blockquote class="blockquote mb-0">
-                              <p>A well-known quote, contained in a blockquote element.</p>
-                              <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                            Auto Services #6
+                          </div>
+                          <img class="card-img-top" src="/img/pexels-fauxels-3183181.jpg" alt="">
+                          <div class="card-img-overlay d-flex  align-items-end">
+                            <blockquote class="blockquote">
+                              <footer class="blockquote-footer"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><cite title="Source Title"  class="resturantName">Name</cite></footer>
                             </blockquote>
                           </div>
-                          </div>    
-                        </div>
+                        </div>    
+                      </div>
                   </div>
               </div>
-
-<!-- Carousel Item #3 -->
               <div class="carousel-item">
                 <div class="row">
                   <div class="col-md-4">
                     <div class="card">
-                      <img class="card-img-top" src="/img/dice.jpg" alt="">
                       <div class="card-img-overlay">
-                        <blockquote class="blockquote mb-0">
-                          <p>A well-known quote, contained in a blockquote element.</p>
-                          <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                        Auto Services #7
+                       </div>
+                      <img class="card-img-top" src="/img/pexels-christina-morillo-1181667.jpg" alt="">
+                      <div class="card-img-overlay d-flex  align-items-end">
+                        <blockquote class="blockquote">
+                          <footer class="blockquote-footer"><i class="fas fa-star"></i><cite title="Source Title"  class="resturantName">Name</cite></footer>
                         </blockquote>
                       </div>
                       </div>    
                     </div>
                     <div class="col-md-4">
                       <div class="card">
-                        <img class="card-img-top" src="/img/dice.jpg" alt="">
                         <div class="card-img-overlay">
-                          <blockquote class="blockquote mb-0">
-                            <p>A well-known quote, contained in a blockquote element.</p>
-                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                          Auto Services #8
+                        </div>
+                        <img class="card-img-top" src="/img/pexels-christina-morillo-1181583.jpg" alt="">
+                        <div class="card-img-overlay d-flex  align-items-end">
+                          <blockquote class="blockquote">
+                            <footer class="blockquote-footer"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><cite title="Source Title"  class="resturantName">Name</cite></footer>
                           </blockquote>
                         </div>
                         </div>    
                       </div>
                       <div class="col-md-4">
                         <div class="card">
-                          <img class="card-img-top" src="/img/dice.jpg" alt="">
                           <div class="card-img-overlay">
-                            <blockquote class="blockquote mb-0">
-                              <p>A well-known quote, contained in a blockquote element.</p>
-                              <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                            Auto Services #9
+                          </div>
+                          <img class="card-img-top" src="/img/pexels-paul-efe-763934.jpg" alt="">
+                          <div class="card-img-overlay d-flex  align-items-end">
+                            <blockquote class="blockquote">
+                              <footer class="blockquote-footer"><i class="fas fa-star"></i><i class="fas fa-star"></i><cite title="Source Title"  class="resturantName">Name</cite></footer>
                             </blockquote>
                           </div>
                         </div>    
                       </div>
                   </div>
-              </div>      
+              </div> 
             </div>
           </div>
-        </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselAuto" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselAuto" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
       </div>
     </div>
   </div>
 </div>
+</div>
+
+
+
 <!-- Home Tab -->
 <div role="tabpanel" class="tab-pane fade" id="home">
   <div class="container card-carousel mt-5">
     <div class="row">
       <div class="col-md-12">
-        <div id="homeIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselHome" class="carousel slide">
           <ol class="carousel-indicators">
-            <li type="button" data-bs-target="#homeIndicators" data-bs-slide-to="0" class="active"></li>
-            <li type="button" data-bs-target="#homeIndicators" data-bs-slide-to="1"></li>
-            <li type="button" data-bs-target="#homeIndicators" data-bs-slide-to="2"></li>
+            <li type="button" data-bs-target="#carouselHome" data-bs-slide-to="0" class="active"></li>
+            <li type="button" data-bs-target="#carouselHome" data-bs-slide-to="1"></li>
           </ol>
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-<!-- Carouse Item #1 -->
-            <div class="carousel-item active">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="card">
-                    <img class="card-img-top" src="/img/jerkchickensmall.jpg" alt="">
-                    <div class="card-img-overlay">
-                      <blockquote class="blockquote mb-0">
-                        <p>A well-known quote, contained in a blockquote element.</p>
-                        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                      </blockquote>
-                    </div>
-                    </div>    
-                  </div>
+          <div id="carouselHome" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
                   <div class="col-md-4">
                     <div class="card">
-                      <img class="card-img-top" src="/img/jerkchickensmall.jpg" alt="">
                       <div class="card-img-overlay">
-                        <blockquote class="blockquote mb-0">
-                          <p>A well-known quote, contained in a blockquote element.</p>
-                          <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                          Home Services #1
+                      </div>
+                      <img class="card-img-top" src="/img/pexels-nappy-935977.jpg" alt="">
+                      <div class="card-img-overlay d-flex  align-items-end">
+                        <blockquote class="blockquote">
+                          <footer class="blockquote-footer"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><cite title="Source Title"  class="resturantName">Name</cite></footer>
                         </blockquote>
                       </div>
                       </div>    
                     </div>
                     <div class="col-md-4">
                       <div class="card">
-                        <img class="card-img-top" src="/img/jerkchickensmall.jpg" alt="">
                         <div class="card-img-overlay">
-                          <blockquote class="blockquote mb-0">
-                            <p>A well-known quote, contained in a blockquote element.</p>
-                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                          Home Services #2
+                        </div>
+                        <img class="card-img-top" src="/img/pexels-monstera-9490629.jpg" alt="">
+                        <div class="card-img-overlay d-flex  align-items-end">
+                          <blockquote class="blockquote">
+                            <footer class="blockquote-footer"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><cite title="Source Title"  class="resturantName">Name</cite></footer>
                           </blockquote>
                         </div>
                         </div>    
                       </div>
-                </div>
-            </div>
-<!-- Carousel Item #2 -->
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="card">
-                    <img class="card-img-top" src="/img/jerkchickensmall.jpg" alt="">
-                    <div class="card-img-overlay">
-                      <blockquote class="blockquote mb-0">
-                        <p>A well-known quote, contained in a blockquote element.</p>
-                        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                      </blockquote>
-                    </div>
-                    </div>    
+                      <div class="col-md-4">
+                        <div class="card">
+                          <div class="card-img-overlay">
+                            Home Services #3
+                          </div>
+                          <img class="card-img-top" src="/img/pexels-monstera-9489084.jpg" alt="">
+                          <div class="card-img-overlay d-flex  align-items-end">
+                            <blockquote class="blockquote">
+                              <footer class="blockquote-footer"><i class="fas fa-star"></i><cite title="Source Title"  class="resturantName">Name</cite></footer>
+                            </blockquote>
+                          </div>
+                        </div>    
+                      </div>
                   </div>
+              </div> 
+              <div class="carousel-item">
+                <div class="row">
                   <div class="col-md-4">
                     <div class="card">
-                      <img class="card-img-top" src="/img/jerkchickensmall.jpg" alt="">
                       <div class="card-img-overlay">
-                        <blockquote class="blockquote mb-0">
-                          <p>A well-known quote, contained in a blockquote element.</p>
-                          <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                        Home Services #4
+                      </div>
+                      <img class="card-img-top" src="/img/pexels-monstera-9489080.jpg" alt="">
+                      <div class="card-img-overlay d-flex  align-items-end">
+                        <blockquote class="blockquote">
+                          <footer class="blockquote-footer"><i class="fas fa-star"></i><i class="fas fa-star"></i><cite title="Source Title"  class="resturantName">Name</cite></footer>
                         </blockquote>
                       </div>
                       </div>    
                     </div>
                     <div class="col-md-4">
                       <div class="card">
-                        <img class="card-img-top" src="/img/jerkchickensmall.jpg" alt="">
                         <div class="card-img-overlay">
-                          <blockquote class="blockquote mb-0">
-                            <p>A well-known quote, contained in a blockquote element.</p>
-                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                          Home Services #5
+                        </div>
+                        <img class="card-img-top" src="/img/pexels-monstera-9488840.jpg" alt="">
+                        <div class="card-img-overlay d-flex  align-items-end">
+                          <blockquote class="blockquote">
+                            <footer class="blockquote-footer"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><cite title="Source Title"  class="resturantName">Name</cite></footer>
                           </blockquote>
                         </div>
                         </div>    
                       </div>
-                </div>
-            </div>
-
-<!-- Carousel Item #3 -->
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="card">
-                    <img class="card-img-top" src="/img/jerkchickensmall.jpg" alt="">
-                    <div class="card-img-overlay">
-                      <blockquote class="blockquote mb-0">
-                        <p>A well-known quote, contained in a blockquote element.</p>
-                        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                      </blockquote>
-                    </div>
-                    </div>    
-                  </div>
-                  <div class="col-md-4">
-                    <div class="card">
-                      <img class="card-img-top" src="/img/jerkchickensmall.jpg" alt="">
-                      <div class="card-img-overlay">
-                        <blockquote class="blockquote mb-0">
-                          <p>A well-known quote, contained in a blockquote element.</p>
-                          <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                        </blockquote>
+                      <div class="col-md-4">
+                        <div class="card">
+                          <div class="card-img-overlay">
+                            Home Services #6
+                          </div>
+                          <img class="card-img-top" src="/img/pexels-fauxels-3183181.jpg" alt="">
+                          <div class="card-img-overlay d-flex  align-items-end">
+                            <blockquote class="blockquote">
+                              <footer class="blockquote-footer"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><cite title="Source Title"  class="resturantName">Name</cite></footer>
+                            </blockquote>
+                          </div>
+                        </div>    
                       </div>
-                      </div>    
-                    </div>
-                    <div class="col-md-4">
-                      <div class="card">
-                        <img class="card-img-top" src="/img/jerkchickensmall.jpg" alt="">
-                        <div class="card-img-overlay">
-                          <blockquote class="blockquote mb-0">
-                            <p>A well-known quote, contained in a blockquote element.</p>
-                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                          </blockquote>
-                        </div>
-                      </div>    
-                    </div>
-                </div>
-            </div>      
+                  </div>
+              </div>
+            </div>
           </div>
-        </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselHome" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselHome" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
       </div>
     </div>
   </div>
 </div>
 </div>
 
-
-
 </div>
+</div>
+
 
 
 <!-- Jumbotron -->
 <div class="container">
-  <div class="row jumbotron mt-5 pt-3 bg-light">
+  <div class="row jumbotron mt-5 pt-3" style="background-color: #ccbda9;">
     <div class="col-12 col-md-4">
       <p class="text-uppercase justify-content-center"> Join the growing movement and be the support the community needs.
       </p>
@@ -763,136 +730,154 @@
 <!-- What's Trending Places -->
 <div class="container pt-3">
   <div class="row welcome">
-    <div class="col">
-      <h3 class="lead text-center"><i class="fas fa-fire prd-2"></i>What's Trending</h3>
+    <div class="col d-flex justify-content-center">
+      <i class="fas fa-fire" style="margin-top: 5px;"></i><h3 class="lead ml-1" style="margin-left: 8px;">What's Trending</h3>
     </div>
     <hr>
   </div>
 </div>
 
 <!-- Display Cards Carousel  -->
-<div class="container card-carousel">
+<div class="container-fluid card-carousel">
   <div class="row">
     <div class="col-md-12">
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div id="trendingIndicators" class="carousel slide" data-bs-ride="carousel">
         <ol class="carousel-indicators">
-          <li data-bs-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-bs-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-bs-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li type="button" data-bs-target="#trendingIndicators" data-bs-slide-to="0" class="active"></li>
+          <li type="button" data-bs-target="#trendingIndicators" data-bs-slide-to="1"></li>
+          <li type="button" data-bs-target="#trendingIndicators" data-bs-slide-to="2"></li>
         </ol>
       <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="card">
-                  <img class="card-img-top" src="/img/banana.jpg" alt="">
-                  <div class="card-img-overlay">
-                    <blockquote class="blockquote mb-0">
-                      <p>A well-known quote, contained in a blockquote element.</p>
-                      <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                    </blockquote>
-                  </div>
-                  </div>    
-                </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
                 <div class="col-md-4">
                   <div class="card">
-                    <img class="card-img-top" src="/img/banana.jpg" alt="">
-                    <div class="card-img-overlay">
-                      <blockquote class="blockquote mb-0">
-                        <p>A well-known quote, contained in a blockquote element.</p>
-                        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                      <div class="card-img-overlay">
+                        Trending #1<i class="fas fa-fire" style="margin-top: 5px;"></i><i class="fas fa-fire" style="margin-top: 5px;"></i><i class="fas fa-fire" style="margin-top: 5px;"></i>
+                      </div>
+                    <img class="card-img-top" src="/img/pexels-nappy-935977.jpg" alt="">
+                    <div class="card-img-overlay d-flex  align-items-end">
+                      <blockquote class="blockquote">
+                        <footer class="blockquote-footer"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><cite title="Source Title"  class="resturantName">Resturant Name</cite></footer>
                       </blockquote>
                     </div>
                     </div>    
                   </div>
                   <div class="col-md-4">
                     <div class="card">
-                      <img class="card-img-top" src="/img/banana.jpg" alt="">
-                      <div class="card-img-overlay">
-                        <blockquote class="blockquote mb-0">
-                          <p>A well-known quote, contained in a blockquote element.</p>
-                          <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                        <div class="card-img-overlay">
+                          Trending #2<i class="fas fa-fire" style="margin-top: 5px;"></i>
+                        </div>
+                      <img class="card-img-top" src="/img/pexels-monstera-9490629.jpg" alt="">
+                      <div class="card-img-overlay d-flex  align-items-end">
+                        <blockquote class="blockquote">
+                          <footer class="blockquote-footer"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><cite title="Source Title"  class="resturantName">Resturant Name</cite></footer>
                         </blockquote>
                       </div>
                       </div>    
                     </div>
-              </div>
-        </div>
-        <div class="carousel-item">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card">
-                <img class="card-img-top" src="/img/banana.jpg" alt="">
-                <div class="card-img-overlay">
-                  <blockquote class="blockquote mb-0">
-                    <p>A well-known quote, contained in a blockquote element.</p>
-                    <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                  </blockquote>
+                    <div class="col-md-4">
+                      <div class="card">
+                          <div class="card-img-overlay">
+                            Trending #3<i class="fas fa-fire" style="margin-top: 5px;"></i><i class="fas fa-fire" style="margin-top: 5px;"></i>
+                          </div>
+                        <img class="card-img-top" src="/img/pexels-monstera-9489084.jpg" alt="">
+                        <div class="card-img-overlay d-flex  align-items-end">
+                          <blockquote class="blockquote">
+                            <footer class="blockquote-footer"><i class="fas fa-star"></i><cite title="Source Title"  class="resturantName">Resturant Name</cite></footer>
+                          </blockquote>
+                        </div>
+                      </div>    
+                    </div>
                 </div>
-                </div>    
-              </div>
-              <div class="col-md-4">
-                <div class="card">
-                  <img class="card-img-top" src="/img/banana.jpg" alt="">
-                  <div class="card-img-overlay">
-                    <blockquote class="blockquote mb-0">
-                      <p>A well-known quote, contained in a blockquote element.</p>
-                      <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                    </blockquote>
-                  </div>
-                  </div>    
-                </div>
+            </div> 
+            <div class="carousel-item">
+              <div class="row">
                 <div class="col-md-4">
                   <div class="card">
-                    <img class="card-img-top" src="/img/banana.jpg" alt="">
-                    <div class="card-img-overlay">
-                      <blockquote class="blockquote mb-0">
-                        <p>A well-known quote, contained in a blockquote element.</p>
-                        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                      <div class="card-img-overlay">
+                        Trending #4<i class="fas fa-fire" style="margin-top: 5px;"></i><i class="fas fa-fire" style="margin-top: 5px;"></i>
+                      </div>
+                    <img class="card-img-top" src="/img/pexels-monstera-9489080.jpg" alt="">
+                    <div class="card-img-overlay d-flex  align-items-end">
+                      <blockquote class="blockquote">
+                        <footer class="blockquote-footer"><i class="fas fa-star"></i><i class="fas fa-star"></i><cite title="Source Title"  class="resturantName">Resturant #1</cite></footer>
                       </blockquote>
                     </div>
                     </div>    
                   </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-img-overlay">
+                          Trending #5<i class="fas fa-fire" style="margin-top: 5px;"></i><i class="fas fa-fire" style="margin-top: 5px;"></i><i class="fas fa-fire" style="margin-top: 5px;"></i>
+                        </div>
+                      <img class="card-img-top" src="/img/pexels-monstera-9488840.jpg" alt="">
+                      <div class="card-img-overlay d-flex  align-items-end">
+                        <blockquote class="blockquote">
+                          <footer class="blockquote-footer"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><cite title="Source Title"  class="resturantName">Resturant Name</cite></footer>
+                        </blockquote>
+                      </div>
+                      </div>    
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card">
+                          <div class="card-img-overlay">
+                            Trending #6<i class="fas fa-fire" style="margin-top: 5px;"></i>
+                          </div>
+                        <img class="card-img-top" src="/img/pexels-fauxels-3183181.jpg" alt="">
+                        <div class="card-img-overlay d-flex  align-items-end">
+                          <blockquote class="blockquote">
+                            <footer class="blockquote-footer"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><cite title="Source Title"  class="resturantName">Resturant Name</cite></footer>
+                          </blockquote>
+                        </div>
+                      </div>    
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="carousel-item">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card">
-                <img class="card-img-top" src="/img/banana.jpg" alt="">
-                <div class="card-img-overlay">
-                  <blockquote class="blockquote mb-0">
-                    <p>A well-known quote, contained in a blockquote element.</p>
-                    <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                  </blockquote>
-                </div>
-                </div>    
-              </div>
-              <div class="col-md-4">
-                <div class="card">
-                  <img class="card-img-top" src="/img/banana.jpg" alt="">
-                  <div class="card-img-overlay">
-                    <blockquote class="blockquote mb-0">
-                      <p>A well-known quote, contained in a blockquote element.</p>
-                      <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                    </blockquote>
-                  </div>
-                  </div>    
-                </div>
+            <div class="carousel-item">
+              <div class="row">
                 <div class="col-md-4">
                   <div class="card">
-                    <img class="card-img-top" src="/img/banana.jpg" alt="">
-                    <div class="card-img-overlay">
-                      <blockquote class="blockquote mb-0">
-                        <p>A well-known quote, contained in a blockquote element.</p>
-                        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                      <div class="card-img-overlay">
+                        Trending #7<i class="fas fa-fire" style="margin-top: 5px;"></i><i class="fas fa-fire" style="margin-top: 5px;"></i><i class="fas fa-fire" style="margin-top: 5px;"></i>
+                      </div>
+                    <img class="card-img-top" src="/img/pexels-christina-morillo-1181667.jpg" alt="">
+                    <div class="card-img-overlay d-flex  align-items-end">
+                      <blockquote class="blockquote">
+                        <footer class="blockquote-footer"><i class="fas fa-star"></i><cite title="Source Title"  class="resturantName">Resturant Name</cite></footer>
                       </blockquote>
                     </div>
                     </div>    
                   </div>
-               </div>
-             </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-img-overlay">
+                          Trending #8<i class="fas fa-fire" style="margin-top: 5px;"></i><i class="fas fa-fire" style="margin-top: 5px;"></i>
+                        </div>
+                      <img class="card-img-top" src="/img/pexels-christina-morillo-1181583.jpg" alt="">
+                      <div class="card-img-overlay d-flex  align-items-end">
+                        <blockquote class="blockquote">
+                          <footer class="blockquote-footer"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><cite title="Source Title"  class="resturantName">Resturant Name</cite></footer>
+                        </blockquote>
+                      </div>
+                      </div>    
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card">
+                          <div class="card-img-overlay">
+                            Trending #9<i class="fas fa-fire" style="margin-top: 5px;"></i>
+                          </div>
+                        <img class="card-img-top" src="/img/pexels-paul-efe-763934.jpg" alt="">
+                        <div class="card-img-overlay d-flex  align-items-end">
+                          <blockquote class="blockquote">
+                            <footer class="blockquote-footer"><i class="fas fa-star"></i><i class="fas fa-star"></i><cite title="Source Title"  class="resturantName">Resturant Name</cite></footer>
+                          </blockquote>
+                        </div>
+                      </div>    
+                    </div>
+                </div>
+            </div> 
           </div>
         </div>
       </div>
